@@ -1,0 +1,64 @@
+/* Reseta alguns estilos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+  margin: 0; /* Remove a margem padrão do corpo */
+  padding: 20px; /* Adiciona espaçamento ao redor do corpo */
+  position: relative; /* Permite o posicionamento absoluto dos elementos */
+  height: 100vh; /* Altura total da tela */
+  background: linear-gradient(to right, #131313, #131313); /* Gradiente de fundo */
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+button {
+  background-color: #A020F0; /* Cor de fundo */
+  border: none; /* Remove a borda padrão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinha o texto ao centro */
+  text-decoration: none; /* Remove qualquer decoração de texto */
+  display: inline-block; /* Exibe os botões como elementos em linha */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 10px; /* Margem ao redor dos botões */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar por cima */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #8B008B; /* Cor de fundo ao passar o mouse */
+}
+
+.button-container {
+  position: absolute; /* Permite o posicionamento absoluto dentro do body */
+  top: 15px; /* Distância do topo da tela (abaixo do título) */
+  right: 20px; /* Distância do lado esquerdo da tela */
+}
+
+.horizontal-line {
+  border: 0; /* Remove a borda padrão do hr */
+  height: 2px; /* Espessura da linha */
+  background: #050505; /* Cor da linha */
+  margin: 20px 0; /* Margem: 20px acima, 0 abaixo */
+  width: 100%; /* Garante que a linha ocupe a largura total da tela */
+  position: absolute; /* Permite posicionamento absoluto */
+  top: 60px; /* Distância do topo da tela para a linha */
+  left: 0; /* Alinha a linha ao lado esquerdo da tela */
+}
+
+.title {
+  position: absolute; /* Permite o posicionamento absoluto dentro do body */
+  top: 20px; /* Distância do topo da tela */
+  left: 20px; /* Distância do lado esquerdo da tela */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #A020F0; /* Cor do texto */
+}
