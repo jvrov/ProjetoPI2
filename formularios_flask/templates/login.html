@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - ApostaVip</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Certifique-se de que o caminho está correto -->
 </head>
 <body>
+  
+  <a href="{{ url_for('index') }}" class="title">ApostaVIP</a>
+
+  <div class="form-container">
     <h2>Login</h2>
-    <form method="POST">
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <button type="submit">Login</button>
+    <form action="{{ url_for('login') }}" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
     </form>
+  </div>
+
+  <hr class="horizontal-line">
+  
 </body>
 </html>

@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar - ApostaVip</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h2>Register</h2>
-    <form method="POST">
-        <input type="text" name="name" placeholder="Name" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <input type="date" name="birthdate" placeholder="Birthdate" required><br>
-        <button type="submit">Register</button>
+  
+  <a href="{{ url_for('index') }}" class="title">ApostaVIP</a>
+
+
+  <div class="form-container">
+    <h2>Registrar</h2>
+    <form action="{{ url_for('register') }}" method="POST">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="birthdate">Data de Nascimento:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <button type="submit">Registrar</button>
     </form>
+  </div>
+
+  <hr class="horizontal-line">
+  
 </body>
 </html>
